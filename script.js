@@ -220,12 +220,148 @@ function composePalette() {
   return composition;
 }
 
+function modelsUsedOutside(columnIndex) {
+  return new Set(
+    currentComposition
+      .filter((_, index) => index !== columnIndex)
+      .map(({ bag }) => bag[0]),
+  );
+}
+
+function bagForColumn(columnIndex, direction) {
+  const { color, bag: currentBag } = currentComposition[columnIndex];
+  const bags = catalog[color].bags;
+  const currentIndex = bags.findIndex(([, handle]) => handle === currentBag[1]);
+  const usedModels = modelsUsedOutside(columnIndex);
+
+  for (let offset = 1; offset < bags.length; offset += 1) {
+    const candidateIndex = (currentIndex + direction * offset + bags.length) % bags.length;
+    const candidate = bags[candidateIndex];
+    if (!usedModels.has(candidate[0])) return candidate;
+  }
+
+  return null;
+}
+
+function colorForColumn(columnIndex, direction) {
+  const current = currentComposition[columnIndex];
+  const colors = Object.keys(catalog).filter((color) => color !== "Black");
+  const currentIndex = colors.indexOf(current.color);
+  const usedColors = new Set(
+    currentComposition
+      .filter((_, index) => index !== columnIndex)
+      .map(({ color }) => color),
+  );
+  const usedModels = modelsUsedOutside(columnIndex);
+
+  for (let offset = 1; offset < colors.length; offset += 1) {
+    const colorIndex = (currentIndex + direction * offset + colors.length) % colors.length;
+    const color = colors[colorIndex];
+    if (usedColors.has(color)) continue;
+
+    const candidates = catalog[color].bags.filter(([model]) => !usedModels.has(model));
+    if (candidates.length === 0) continue;
+
+    const matchingModel = candidates.find(([model]) => model === current.bag[0]);
+    return { color, bag: matchingModel ?? candidates[0] };
+  }
+
+  return null;
+}
+
+function createCycleControls(label, previousOption, nextOption, onCycle) {
+  const controls = document.createElement("div");
+
+  controls.className = "column-cycle-controls";
+
+  [
+    { direction: -1, symbol: "←", option: previousOption },
+    { direction: 1, symbol: "→", option: nextOption },
+  ].forEach(({ direction, symbol, option }) => {
+    const button = document.createElement("button");
+    button.className = "column-cycle-button";
+    button.type = "button";
+    button.textContent = symbol;
+    button.disabled = !option;
+    button.dataset.direction = String(direction);
+    button.setAttribute(
+      "aria-label",
+      `${direction < 0 ? "Previous" : "Next"} ${label.toLowerCase()}`,
+    );
+    button.addEventListener("click", () => onCycle(direction));
+    controls.append(button);
+  });
+
+  return controls;
+}
+
+function syncCycleControls() {
+  [...paletteElement.children].forEach((card, columnIndex) => {
+    card.querySelectorAll(".column-cycle-button").forEach((button) => {
+      const direction = Number(button.dataset.direction);
+      button.disabled = !bagForColumn(columnIndex, direction);
+    });
+  });
+
+  [...swatchesElement.children].forEach((swatch, columnIndex) => {
+    swatch.querySelectorAll(".column-cycle-button").forEach((button) => {
+      const direction = Number(button.dataset.direction);
+      button.disabled = !colorForColumn(columnIndex, direction);
+    });
+  });
+}
+
+function replaceBagColumn(columnIndex, direction) {
+  previousComposition = compositionSignature(currentComposition);
+  const card = createCard(currentComposition[columnIndex], columnIndex);
+  card.classList.add("is-column-update");
+  paletteElement.children[columnIndex].replaceWith(card);
+  syncCycleControls();
+  card.querySelector(`[data-direction="${direction}"]`)?.focus();
+}
+
+function replaceColorColumn(columnIndex, direction) {
+  previousComposition = compositionSignature(currentComposition);
+  const card = createCard(currentComposition[columnIndex], columnIndex);
+  const swatch = createSwatch(currentComposition[columnIndex], columnIndex);
+  card.classList.add("is-column-update");
+  paletteElement.children[columnIndex].replaceWith(card);
+  swatchesElement.children[columnIndex].replaceWith(swatch);
+  syncCycleControls();
+  swatch.querySelector(`[data-direction="${direction}"]`)?.focus();
+}
+
+function cycleBag(columnIndex, direction) {
+  const bag = bagForColumn(columnIndex, direction);
+  if (!bag) return;
+
+  currentComposition[columnIndex] = {
+    ...currentComposition[columnIndex],
+    bag,
+  };
+  replaceBagColumn(columnIndex, direction);
+}
+
+function cycleColor(columnIndex, direction) {
+  const next = colorForColumn(columnIndex, direction);
+  if (!next) return;
+
+  currentComposition[columnIndex] = next;
+  replaceColorColumn(columnIndex, direction);
+}
+
 function createCard({ color, bag }, index) {
   const [model, handle, imageUrl] = bag;
   const card = document.createElement("article");
   const link = document.createElement("a");
   const image = document.createElement("img");
   const bagName = document.createElement("span");
+  const styleControls = createCycleControls(
+    "Style",
+    bagForColumn(index, -1),
+    bagForColumn(index, 1),
+    (direction) => cycleBag(index, direction),
+  );
 
   card.className = "palette-card";
   link.className = "bag-link";
@@ -241,9 +377,10 @@ function createCard({ color, bag }, index) {
   image.decoding = "async";
   bagName.className = "bag-name";
   bagName.textContent = model;
+  styleControls.classList.add("style-cycle-controls");
 
   link.append(image, bagName);
-  card.append(link);
+  card.append(link, styleControls);
   return card;
 }
 
@@ -255,7 +392,7 @@ function contrastColor(hex) {
   return luminance > 145 ? "#171713" : "#f1eee7";
 }
 
-function createSwatch({ color }) {
+function createSwatch({ color }, index) {
   const hex = catalog[color].swatch.toUpperCase();
   const swatch = document.createElement("div");
   const name = document.createElement("p");
@@ -270,6 +407,17 @@ function createSwatch({ color }) {
   code.textContent = hex;
 
   swatch.append(name, code);
+  if (color !== "Black") {
+    const colorControls = createCycleControls(
+      "Color",
+      colorForColumn(index, -1),
+      colorForColumn(index, 1),
+      (direction) => cycleColor(index, direction),
+    );
+    colorControls.classList.add("color-cycle-controls");
+    swatch.append(colorControls);
+  }
+
   return swatch;
 }
 
@@ -442,19 +590,25 @@ async function downloadPalette() {
   downloadBlob(archive, `lindquist-palette-${downloadTimestamp()}.zip`);
 }
 
-function renderPalette() {
-  let composition = composePalette();
-  let signature = composition.map(({ color, bag }) => `${color}-${bag[0]}`).join("|");
+function compositionSignature(composition) {
+  return composition.map(({ color, bag }) => `${color}-${bag[0]}`).join("|");
+}
 
-  if (signature === previousComposition) {
-    composition = composePalette();
-    signature = composition.map(({ color, bag }) => `${color}-${bag[0]}`).join("|");
-  }
-
-  previousComposition = signature;
+function renderComposition(composition) {
+  previousComposition = compositionSignature(composition);
   currentComposition = composition;
   paletteElement.replaceChildren(...composition.map(createCard));
   swatchesElement.replaceChildren(...composition.map(createSwatch));
+}
+
+function renderPalette() {
+  let composition = composePalette();
+
+  if (compositionSignature(composition) === previousComposition) {
+    composition = composePalette();
+  }
+
+  renderComposition(composition);
 }
 
 shuffleButton.addEventListener("click", () => {
