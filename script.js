@@ -189,15 +189,32 @@ function composePalette() {
   const usedModels = new Set([blackBag[0]]);
   const colors = shuffled(Object.keys(catalog).filter((color) => color !== "Black"));
 
-  for (const color of colors) {
-    if (composition.length === 5) break;
+  function addUniqueBags(colorIndex) {
+    if (composition.length === 5) return true;
+    if (colors.length - colorIndex < 5 - composition.length) return false;
 
-    const unusedModels = catalog[color].bags.filter(([model]) => !usedModels.has(model));
-    const candidates = unusedModels.length > 0 ? unusedModels : catalog[color].bags;
-    const bag = randomItem(candidates);
+    for (let index = colorIndex; index < colors.length; index += 1) {
+      const color = colors[index];
+      const candidates = shuffled(
+        catalog[color].bags.filter(([model]) => !usedModels.has(model)),
+      );
 
-    composition.push({ color, bag });
-    usedModels.add(bag[0]);
+      for (const bag of candidates) {
+        composition.push({ color, bag });
+        usedModels.add(bag[0]);
+
+        if (addUniqueBags(index + 1)) return true;
+
+        composition.pop();
+        usedModels.delete(bag[0]);
+      }
+    }
+
+    return false;
+  }
+
+  if (!addUniqueBags(0)) {
+    throw new Error("Could not compose a palette with five unique bag models");
   }
 
   return composition;
