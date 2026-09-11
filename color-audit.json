@@ -1,0 +1,794 @@
+{
+  "Black": {
+    "current": "#2C2E2E",
+    "recommended": "#2C2E2E",
+    "delta_e": 0.0,
+    "products_found": 17,
+    "samples": [
+      {
+        "product": "Ray in Black",
+        "hex": "#2E2F35"
+      },
+      {
+        "product": "Limited Edition Scallop Shell Mezzo in Black",
+        "hex": "#202126"
+      },
+      {
+        "product": "Little Lee in Black",
+        "hex": "#222425"
+      },
+      {
+        "product": "Small Cyl in Black",
+        "hex": "#3C383F"
+      },
+      {
+        "product": "Gala in Black",
+        "hex": "#292A2D"
+      },
+      {
+        "product": "Val in Black",
+        "hex": "#3D3E43"
+      },
+      {
+        "product": "Segui in Black",
+        "hex": "#23262A"
+      },
+      {
+        "product": "Lee in Black",
+        "hex": "#303135"
+      },
+      {
+        "product": "Big Ama in Black",
+        "hex": "#202124"
+      },
+      {
+        "product": "Anni in Black",
+        "hex": "#222224"
+      },
+      {
+        "product": "Mezzo in Black",
+        "hex": "#333435"
+      },
+      {
+        "product": "Ama in Black",
+        "hex": "#252524"
+      },
+      {
+        "product": "Mini Eggi in Black",
+        "hex": "#292A2E"
+      },
+      {
+        "product": "Savoie in Black",
+        "hex": "#2C2E2D"
+      },
+      {
+        "product": "Eggi in Black",
+        "hex": "#393A3A"
+      },
+      {
+        "product": "Faba in Black",
+        "hex": "#322E31"
+      },
+      {
+        "product": "Linda in Black",
+        "hex": "#373836"
+      }
+    ]
+  },
+  "Carmine": {
+    "current": "#B11B2E",
+    "recommended": "#B11B2E",
+    "delta_e": 0.0,
+    "products_found": 11,
+    "samples": [
+      {
+        "product": "Ama in Carmine",
+        "hex": "#AC2136"
+      },
+      {
+        "product": "Little Lee in Carmine",
+        "hex": "#BE203D"
+      },
+      {
+        "product": "Val in Carmine",
+        "hex": "#B60730"
+      },
+      {
+        "product": "Lee in Carmine",
+        "hex": "#B11626"
+      },
+      {
+        "product": "Lina in Carmine",
+        "hex": "#B92439"
+      },
+      {
+        "product": "Mini Eggi in Carmine",
+        "hex": "#A81B1D"
+      },
+      {
+        "product": "Eggi in Carmine",
+        "hex": "#C91222"
+      },
+      {
+        "product": "Savoie in Carmine",
+        "hex": "#A7142E"
+      },
+      {
+        "product": "Mezzo in Carmine",
+        "hex": "#AD1B2D"
+      },
+      {
+        "product": "Segui in Carmine",
+        "hex": "#AC0B22"
+      },
+      {
+        "product": "Faba in Carmine",
+        "hex": "#CB2A44"
+      }
+    ]
+  },
+  "Carrot": {
+    "current": "#DD3F07",
+    "recommended": "#DD3F07",
+    "delta_e": 0.0,
+    "products_found": 1,
+    "samples": [
+      {
+        "product": "Anni in Carrot",
+        "hex": "#DD3F07"
+      }
+    ]
+  },
+  "Chaga": {
+    "current": "#4C3E37",
+    "recommended": "#4C3E37",
+    "delta_e": 0.0,
+    "products_found": 15,
+    "samples": [
+      {
+        "product": "Ama in Chaga",
+        "hex": "#463731"
+      },
+      {
+        "product": "Anni in Chaga",
+        "hex": "#665249"
+      },
+      {
+        "product": "Segui in Chaga",
+        "hex": "#544238"
+      },
+      {
+        "product": "Val in Chaga",
+        "hex": "#635046"
+      },
+      {
+        "product": "Ray in Chaga",
+        "hex": "#524031"
+      },
+      {
+        "product": "Savoie in Chaga",
+        "hex": "#4A3831"
+      },
+      {
+        "product": "Mezzo in Chaga",
+        "hex": "#3E312D"
+      },
+      {
+        "product": "Lee in Chaga",
+        "hex": "#513F35"
+      },
+      {
+        "product": "Little Lee in Chaga",
+        "hex": "#4B3C39"
+      },
+      {
+        "product": "Big Ama in Chaga",
+        "hex": "#45352E"
+      },
+      {
+        "product": "Eggi in Chaga",
+        "hex": "#4F3E38"
+      },
+      {
+        "product": "Faba in Chaga",
+        "hex": "#4C413E"
+      },
+      {
+        "product": "Lina in Chaga",
+        "hex": "#473930"
+      },
+      {
+        "product": "Mini Eggi in Chaga",
+        "hex": "#5C493E"
+      },
+      {
+        "product": "Pal in Chaga",
+        "hex": "#473C37"
+      }
+    ]
+  },
+  "Chartreuse": {
+    "current": "#C8A11C",
+    "recommended": "#C8A11C",
+    "delta_e": 0.0,
+    "products_found": 15,
+    "samples": [
+      {
+        "product": "Ray in Chartreuse",
+        "hex": "#D6B222"
+      },
+      {
+        "product": "Val in Chartreuse",
+        "hex": "#C8A628"
+      },
+      {
+        "product": "Savoie in Chartreuse",
+        "hex": "#B2940F"
+      },
+      {
+        "product": "Little Lee in Chartreuse",
+        "hex": "#D2B639"
+      },
+      {
+        "product": "Pal in Chartreuse",
+        "hex": "#BD9705"
+      },
+      {
+        "product": "Gala in Chartreuse",
+        "hex": "#C9AC0E"
+      },
+      {
+        "product": "Mini Eggi in Chartreuse",
+        "hex": "#B58D0C"
+      },
+      {
+        "product": "Segui in Chartreuse",
+        "hex": "#CCA62C"
+      },
+      {
+        "product": "Lee in Chartreuse",
+        "hex": "#CCA423"
+      },
+      {
+        "product": "Anni in Chartreuse",
+        "hex": "#CFA11C"
+      },
+      {
+        "product": "Big Ama in Chartreuse",
+        "hex": "#CF9E09"
+      },
+      {
+        "product": "Mezzo in Chartreuse",
+        "hex": "#BDA321"
+      },
+      {
+        "product": "Ama in Chartreuse",
+        "hex": "#B89323"
+      },
+      {
+        "product": "Faba in Chartreuse",
+        "hex": "#C69E15"
+      },
+      {
+        "product": "Eggi in Chartreuse",
+        "hex": "#C3A006"
+      }
+    ]
+  },
+  "Goldenrod": {
+    "current": "#B38027",
+    "recommended": "#B38027",
+    "delta_e": 0.0,
+    "products_found": 1,
+    "samples": [
+      {
+        "product": "Mini Eggi in Goldenrod",
+        "hex": "#B38027"
+      }
+    ]
+  },
+  "Green Ochre": {
+    "current": "#907925",
+    "recommended": "#907925",
+    "delta_e": 0.0,
+    "products_found": 12,
+    "samples": [
+      {
+        "product": "Little Lee in Green Ochre",
+        "hex": "#A28620"
+      },
+      {
+        "product": "Gala in Green Ochre",
+        "hex": "#AB9031"
+      },
+      {
+        "product": "Lina in Green Ochre",
+        "hex": "#B89A35"
+      },
+      {
+        "product": "Eggi in Green Ochre",
+        "hex": "#947D28"
+      },
+      {
+        "product": "Lee in Green Ochre",
+        "hex": "#7F6814"
+      },
+      {
+        "product": "Big Ama in Green Ochre",
+        "hex": "#7E6509"
+      },
+      {
+        "product": "Val in Green Ochre",
+        "hex": "#8A721E"
+      },
+      {
+        "product": "Ama in Green Ochre",
+        "hex": "#866C0A"
+      },
+      {
+        "product": "Segui in Green Ochre",
+        "hex": "#877534"
+      },
+      {
+        "product": "Faba in Green Ochre",
+        "hex": "#947E34"
+      },
+      {
+        "product": "Mini Eggi in Green Ochre",
+        "hex": "#A18938"
+      },
+      {
+        "product": "Mezzo in Green Ochre",
+        "hex": "#8D7522"
+      }
+    ]
+  },
+  "Indigo": {
+    "current": "#283E60",
+    "recommended": "#283E60",
+    "delta_e": 0.0,
+    "products_found": 2,
+    "samples": [
+      {
+        "product": "Pal in Indigo",
+        "hex": "#2B3F5F"
+      },
+      {
+        "product": "Anni in Indigo",
+        "hex": "#243D61"
+      }
+    ]
+  },
+  "Ink": {
+    "current": "#484A64",
+    "recommended": "#484A64",
+    "delta_e": 0.0,
+    "products_found": 2,
+    "samples": [
+      {
+        "product": "Faba in Ink",
+        "hex": "#4B4C68"
+      },
+      {
+        "product": "Little Lee in Ink",
+        "hex": "#464761"
+      }
+    ]
+  },
+  "Leather Brown": {
+    "current": "#A24A1E",
+    "recommended": "#A24A1E",
+    "delta_e": 0.0,
+    "products_found": 14,
+    "samples": [
+      {
+        "product": "Ray in Leather Brown",
+        "hex": "#B15A28"
+      },
+      {
+        "product": "Val in Leather Brown",
+        "hex": "#AF5C1F"
+      },
+      {
+        "product": "Little Lee in Leather Brown",
+        "hex": "#C47441"
+      },
+      {
+        "product": "Linda in Leather Brown",
+        "hex": "#7D3A1A"
+      },
+      {
+        "product": "Anni in Leather Brown",
+        "hex": "#8D4120"
+      },
+      {
+        "product": "Mezzo in Leather Brown",
+        "hex": "#9E4A16"
+      },
+      {
+        "product": "Eggi in Leather Brown",
+        "hex": "#A14B14"
+      },
+      {
+        "product": "Segui in Leather Brown",
+        "hex": "#AC511A"
+      },
+      {
+        "product": "Lee in Leather Brown",
+        "hex": "#A4481C"
+      },
+      {
+        "product": "Big Ama in Leather Brown",
+        "hex": "#803E22"
+      },
+      {
+        "product": "Ama in Leather Brown",
+        "hex": "#7C3D1C"
+      },
+      {
+        "product": "Mini Eggi in Leather Brown",
+        "hex": "#A0430C"
+      },
+      {
+        "product": "Savoie in Leather Brown",
+        "hex": "#A65225"
+      },
+      {
+        "product": "Faba in Leather Brown",
+        "hex": "#AB5526"
+      }
+    ]
+  },
+  "Lime": {
+    "current": "#C1C72F",
+    "recommended": "#C1C72F",
+    "delta_e": 0.0,
+    "products_found": 6,
+    "samples": [
+      {
+        "product": "Ray in Lime",
+        "hex": "#C4C839"
+      },
+      {
+        "product": "Limited Edition Eggi in Lime",
+        "hex": "#C2C632"
+      },
+      {
+        "product": "Limited Edition Scallop Shell Faba in Lime",
+        "hex": "#CECF2C"
+      },
+      {
+        "product": "Limited Edition Scallop Shell Little Lee in Lime",
+        "hex": "#C0C31E"
+      },
+      {
+        "product": "Limited Edition Faba in Lime",
+        "hex": "#BED15A"
+      },
+      {
+        "product": "Limited Edition Mezzo in Lime",
+        "hex": "#B9BA0E"
+      }
+    ]
+  },
+  "Olive": {
+    "current": "#555C34",
+    "recommended": "#555C34",
+    "delta_e": 0.0,
+    "products_found": 1,
+    "samples": [
+      {
+        "product": "Faba in Olive",
+        "hex": "#555C34"
+      }
+    ]
+  },
+  "Otter": {
+    "current": "#745945",
+    "recommended": "#745945",
+    "delta_e": 0.0,
+    "products_found": 10,
+    "samples": [
+      {
+        "product": "Ray in Otter",
+        "hex": "#6C5345"
+      },
+      {
+        "product": "Val in Otter",
+        "hex": "#6B4942"
+      },
+      {
+        "product": "Big Ama in Otter",
+        "hex": "#6A5044"
+      },
+      {
+        "product": "Mezzo in Otter",
+        "hex": "#7C5C45"
+      },
+      {
+        "product": "Lee in Otter",
+        "hex": "#664F42"
+      },
+      {
+        "product": "Segui in Otter",
+        "hex": "#785B41"
+      },
+      {
+        "product": "Savoie in Otter",
+        "hex": "#765946"
+      },
+      {
+        "product": "Eggi in Otter",
+        "hex": "#967460"
+      },
+      {
+        "product": "Ama in Otter",
+        "hex": "#715948"
+      },
+      {
+        "product": "Faba in Otter",
+        "hex": "#997967"
+      }
+    ]
+  },
+  "Periwinkle": {
+    "current": "#96B0EE",
+    "recommended": "#96B0EE",
+    "delta_e": 0.0,
+    "products_found": 6,
+    "samples": [
+      {
+        "product": "Limited Edition Scallop Shell Faba in Periwinkle",
+        "hex": "#88A9E1"
+      },
+      {
+        "product": "Limited Edition Scallop Shell Mezzo in Periwinkle",
+        "hex": "#9AB9F4"
+      },
+      {
+        "product": "Savoie in Periwinkle",
+        "hex": "#93AEEE"
+      },
+      {
+        "product": "Mezzo in Periwinkle",
+        "hex": "#99B1F0"
+      },
+      {
+        "product": "Segui in Periwinkle",
+        "hex": "#99B3EE"
+      },
+      {
+        "product": "Mini Eggi in Periwinkle",
+        "hex": "#8EA9EA"
+      }
+    ]
+  },
+  "Persimmon": {
+    "current": "#D31628",
+    "recommended": "#D31628",
+    "delta_e": 0.0,
+    "products_found": 13,
+    "samples": [
+      {
+        "product": "Limited Edition Scallop Shell Mezzo in Persimmon",
+        "hex": "#CF031B"
+      },
+      {
+        "product": "Limited Edition Scallop Shell Faba in Persimmon",
+        "hex": "#D60F29"
+      },
+      {
+        "product": "Val in Persimmon",
+        "hex": "#C81621"
+      },
+      {
+        "product": "Savoie in Persimmon",
+        "hex": "#CA0418"
+      },
+      {
+        "product": "Mini Eggi in Persimmon",
+        "hex": "#D10211"
+      },
+      {
+        "product": "Little Lee in Persimmon",
+        "hex": "#DB2938"
+      },
+      {
+        "product": "Lee in Persimmon",
+        "hex": "#D70F28"
+      },
+      {
+        "product": "Mezzo in Persimmon",
+        "hex": "#C51E29"
+      },
+      {
+        "product": "Segui in Persimmon",
+        "hex": "#ED2333"
+      },
+      {
+        "product": "Anni in Persimmon",
+        "hex": "#D91C2C"
+      },
+      {
+        "product": "Eggi in Persimmon",
+        "hex": "#F02513"
+      },
+      {
+        "product": "Ama in Persimmon",
+        "hex": "#C10407"
+      },
+      {
+        "product": "Faba in Persimmon",
+        "hex": "#D32E2E"
+      }
+    ]
+  },
+  "Pitaya": {
+    "current": "#C92A52",
+    "recommended": "#C92A52",
+    "delta_e": 0.0,
+    "products_found": 1,
+    "samples": [
+      {
+        "product": "Mezzo in Pitaya",
+        "hex": "#C92A52"
+      }
+    ]
+  },
+  "River": {
+    "current": "#017094",
+    "recommended": "#017094",
+    "delta_e": 0.0,
+    "products_found": 3,
+    "samples": [
+      {
+        "product": "Ama in River",
+        "hex": "#017098"
+      },
+      {
+        "product": "Mini Eggi in River",
+        "hex": "#016D8A"
+      },
+      {
+        "product": "Faba in River",
+        "hex": "#177F94"
+      }
+    ]
+  },
+  "Seafoam": {
+    "current": "#ACC5AA",
+    "recommended": "#ACC5AA",
+    "delta_e": 0.0,
+    "products_found": 6,
+    "samples": [
+      {
+        "product": "Limited Edition Mini Eggi in Seafoam",
+        "hex": "#A7BDA5"
+      },
+      {
+        "product": "Limited Edition Ama in Seafoam",
+        "hex": "#9BB39E"
+      },
+      {
+        "product": "Limited Edition Eggi in Seafoam",
+        "hex": "#AFC8B3"
+      },
+      {
+        "product": "Limited Edition Ray in Seafoam",
+        "hex": "#ADC7AC"
+      },
+      {
+        "product": "Limited Edition Little Lee in Seafoam",
+        "hex": "#ABC3A8"
+      },
+      {
+        "product": "Limited Edition Faba in Seafoam",
+        "hex": "#ADC7AD"
+      }
+    ]
+  },
+  "Sumac": {
+    "current": "#5D2030",
+    "recommended": "#5D2030",
+    "delta_e": 0.0,
+    "products_found": 17,
+    "samples": [
+      {
+        "product": "La Mama in Sumac",
+        "hex": "#612338"
+      },
+      {
+        "product": "Little Lee in Sumac",
+        "hex": "#66293E"
+      },
+      {
+        "product": "Linda in Sumac",
+        "hex": "#4B2026"
+      },
+      {
+        "product": "Segui in Sumac",
+        "hex": "#7D2F42"
+      },
+      {
+        "product": "Faba in Sumac",
+        "hex": "#532A30"
+      },
+      {
+        "product": "Eggi in Sumac",
+        "hex": "#552930"
+      },
+      {
+        "product": "Mezzo in Sumac",
+        "hex": "#5E2032"
+      },
+      {
+        "product": "Ama in Sumac",
+        "hex": "#5D1E31"
+      },
+      {
+        "product": "Big Ama in Sumac",
+        "hex": "#5B1429"
+      },
+      {
+        "product": "Mini Eggi in Sumac",
+        "hex": "#561125"
+      },
+      {
+        "product": "Anni in Sumac",
+        "hex": "#591327"
+      },
+      {
+        "product": "Ray in Sumac",
+        "hex": "#5E172F"
+      },
+      {
+        "product": "Savoie in Sumac",
+        "hex": "#4E1525"
+      },
+      {
+        "product": "Gala in Sumac",
+        "hex": "#5A1F30"
+      },
+      {
+        "product": "Lina in Sumac",
+        "hex": "#773446"
+      },
+      {
+        "product": "Lee in Sumac",
+        "hex": "#6E2C34"
+      },
+      {
+        "product": "Val in Sumac",
+        "hex": "#5E1C2A"
+      }
+    ]
+  },
+  "Vachetta": {
+    "current": "#EBC2A2",
+    "recommended": "#EBC2A2",
+    "delta_e": 0.0,
+    "products_found": 5,
+    "samples": [
+      {
+        "product": "Segui in Vachetta",
+        "hex": "#F2D1AA"
+      },
+      {
+        "product": "Anni in Vachetta",
+        "hex": "#EBC2A5"
+      },
+      {
+        "product": "Eggi in Vachetta",
+        "hex": "#EBB48F"
+      },
+      {
+        "product": "Mezzo in Vachetta",
+        "hex": "#E9C4A2"
+      },
+      {
+        "product": "Faba in Vachetta",
+        "hex": "#BF845B"
+      }
+    ]
+  }
+}
