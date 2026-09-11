@@ -15,7 +15,6 @@ const catalog = {
     bags: [
       ["Mezzo", "mezzo-in-carmine", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/0E847995-02ED-4E51-AE78-B96A9FB380D3.jpg?v=1766504814"],
       ["Faba", "faba-in-carmine", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/faba_carmine_0031.jpg?v=1764214228"],
-      ["Lina", "lina-in-carmine", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/C20676A4-17A4-4C9F-8D3B-CB1D9B1FEC74.jpg?v=1771384656"],
     ],
   },
   Sumac: {
@@ -45,7 +44,6 @@ const catalog = {
   "Green Ochre": {
     swatch: "#907925",
     bags: [
-      ["Lina", "lina-in-green-ochre", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/F873BD64-73E3-4C5B-90AC-3A519AF6B712.jpg?v=1771384737"],
       ["Eggi", "eggi-in-green-ochre", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/eggi_ochre_0125.jpg?v=1761345319"],
       ["Faba", "faba-in-green-ochre", "https://cdn.shopify.com/s/files/1/0469/0146/1141/files/faba_ochre_0074.jpg?v=1761372678"],
     ],
